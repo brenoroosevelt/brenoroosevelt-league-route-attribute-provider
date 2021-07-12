@@ -9,13 +9,10 @@ use Jerowork\RouteAttributeProvider\RouteAttributeProviderInterface;
 use League\Route\Router;
 use Psr\SimpleCache\CacheInterface;
 
-final class LeagueRouterAttributeProvider implements RouteAttributeProviderInterface
+class LeagueRouterAttributeProvider implements RouteAttributeProviderInterface
 {
-    private Router $router;
-
-    public function __construct(Router $router)
+    final public function __construct(private Router $router)
     {
-        $this->router = $router;
     }
 
     /**
