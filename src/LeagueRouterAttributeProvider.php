@@ -103,8 +103,7 @@ class LeagueRouterAttributeProvider implements RouteAttributeProviderInterface, 
         array $directories,
         ?CacheInterface $cache = null,
         ?ContainerInterface $container = null
-    ): void
-    {
+    ): void {
         $configurator = new RouteAttributeConfigurator(new self($router, $container));
         $configurator->addDirectory(...$directories);
         if ($cache instanceof CacheInterface) {
