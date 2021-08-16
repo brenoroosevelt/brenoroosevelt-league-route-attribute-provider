@@ -14,7 +14,7 @@ The following versions of PHP are supported: >= `8.0`.
 ## Install
 
 ``` bash
-$ composer require brenoroosevelt/league-route-attribute-gi
+$ composer require brenoroosevelt/league-route-attribute-provider
 ```
 
 ## Usage
